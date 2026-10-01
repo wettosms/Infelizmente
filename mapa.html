@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Linhas</title>
+    <link rel="stylesheet" href="mapa-stlyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+</head>
+<body>
+
+    <div class="app-container map-screen">
+        <div class="map-view">
+            <div class="map-placeholder"></div>
+            <div class="floating-search-bar">
+                <a href="index.html" class="back-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <input type="text" placeholder="Buscar endereço, linha de ônibus...">
+                <button class="clear-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="floating-controls">
+                <button class="control-btn"><i class="fa-solid fa-location-crosshairs"></i></button>
+                <button class="control-btn"><i class="fa-solid fa-layer-group"></i></button>
+            </div>
+        </div>
+        <div class="bottom-sheet">
+            <div class="drag-handle"></div>
+            <div class="bottom-actions-grid">
+                <button class="sheet-button">
+                    <i class="fa-regular fa-star"></i> favoritos
+                </button>
+                <button class="sheet-button">
+                    <i class="fa-solid fa-bus"></i> Paradas
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <script src="mapa.js"></script>
+</body>
+</html>

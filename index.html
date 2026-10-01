@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Ônibus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="app-container main-screen">
+        <header class="app-header">
+            <div class="user-info">
+                <h1>Olá, usuário!</h1>
+                <p>Para onde você quer ir hoje?</p>
+            </div>
+            <div class="user-avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </header>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar endereço, linha de ônibus...">
+            </div>
+        </div>
+        <div class="actions-grid">
+            <a href="mapa.html" class="action-card nav-link">
+                <div class="icon-wrapper blue-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <h3>Buscar no mapa</h3>
+                <p>Encontre pontos próximos</p>
+            </a>
+
+            <div class="action-card">
+                <div class="icon-wrapper bus-icon">
+                    <i class="fa-solid fa-bus"></i>
+                </div>
+                <h3>Linhas de ônibus</h3>
+                <p>Veja horários e itinerários</p>
+            </div>
+        </div>
+        <section class="bus-section">
+            <div class="section-header">
+                <h2>Próximos ônibus</h2>
+                <a href="#" class="see-all">Ver todos</a>
+            </div>
+            <div class="bus-item">
+                <div class="bus-number badge-201">201</div>
+                <div class="bus-details">
+                    <h4>Terminal Central</h4>
+                    <p>Direção: Centro</p>
+                </div>
+                <div class="bus-time">3 min &gt;</div>
+            </div>
+            <div class="bus-item">
+                <div class="bus-number badge-307">307</div>
+                <div class="bus-details">
+                    <h4>Joana Bezerra</h4>
+                    <p>Direção: Centro</p>
+                </div>
+                <div class="bus-time">7 min &gt;</div>
+            </div>
+            <div class="bus-item">
+                <div class="bus-number badge-412">412</div>
+                <div class="bus-details">
+                    <h4>Boa Vista</h4>
+                    <p>Direção: Centro</p>
+                </div>
+                <div class="bus-time">12 min &gt;</div>
+            </div>
+        </section>
+        <footer class="footer-banner">
+            <div class="banner-icon">
+                <i class="fa-solid fa-bus-simple"></i>
+            </div>
+            <div class="banner-text">
+                <h3>Planeje sua viagem</h3>
+                <p>Veja rotas, horários e quanto tempo vai levar</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
