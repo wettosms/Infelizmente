@@ -81,6 +81,8 @@
   const searchInput = $('.floating-search-bar input');
   const clearBtn = $('.clear-btn');
   const [locateBtn, layerBtn] = document.querySelectorAll('.control-btn');
+  const zoomInBtn = $('.zoom-in-btn');
+  const zoomOutBtn = $('.zoom-out-btn');
   const [favBtn, stopsBtn] = document.querySelectorAll('.sheet-button');
   const sheet = $('.bottom-sheet');
   const handle = $('.drag-handle');
@@ -248,6 +250,9 @@
     baseLayers[currentBase].addTo(map).bringToBack();
     toast(currentBase === 'ruas' ? 'Camada: ruas' : 'Camada: satélite');
   });
+
+  zoomInBtn.addEventListener('click', () => map.zoomIn());
+  zoomOutBtn.addEventListener('click', () => map.zoomOut());
 
   // ---------- Busca ----------
   function search(query) {
